@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier Accounting Services</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Premier Accounting Services</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="./service.html" class="nav-link">Services</a></li>
+            <li class="nav-item">
+              <a href="./cart.html" class="nav-link">
+                <i class="fa-solid fa-bag-shopping position-relative"
+                  ><span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning"
+                    id="cartBadge"
+                    >0</span
+                  >
+                </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- page header section -->
+    <div class="page-header">
+      <div class="container">
+        <div class="row align-items-center" style="min-height: 200px">
+          <div class="col-12 text-center text-white">
+            <h1 class="display-5 mb-3 fw-bold">Our services</h1>
+            <p class="lead">
+              We offer a wide range of services to meet your needs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services section -->
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">
+              &copy; 2025 Premier Accounting Services. All rights reserved.
+            </p>
+            <p class="mb-0 small">
+              DEVELOPED BY <small>ALAA ELDIN ALHALLAK</small>
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">
+              <i class="bi bi-envelope me-2"></i>info@alaeldinalhallak.com |
+              <i class="bi bi-phone me-2"></i>+905366298316
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="cartToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header bg-success text-white">
+          <i class="bi bi-cart-plus me-2"></i>
+          <strong class="me-auto">Success</strong>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Item added to cart successfully!</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/cart.js"></script>
+    <script>
+      const services = [
+        {
+          id: 1,
+          title: "Accounting Services",
+          description:
+            "We offer a wide range of accounting services to meet your needs",
+          icon: "bi bi-headset",
+          price: 300,
+        },
+
+        {
+          id: 2,
+          title: "Tax Services",
+          description:
+            "We offer a wide range of tax services to meet your needs",
+          icon: "bi bi-headset",
+          price: 100,
+        },
+        {
+          id: 3,
+          title: "Audit Services",
+          description:
+            "We offer a wide range of audit services to meet your needs",
+          icon: "bi bi-headset",
+          price: 200,
+        },
+        {
+          id: 4,
+          title: "Financial Services",
+          description:
+            "We offer a wide range of financial services to meet your needs",
+          icon: "bi bi-headset",
+          price: 400,
+        },
+        {
+          id: 5,
+          title: "Business Services",
+          description:
+            "We offer a wide range of business services to meet your needs",
+          icon: "bi bi-headset",
+          price: 500,
+        },
+        {
+          id: 6,
+          title: "Legal Services",
+          description:
+            "We offer a wide range of legal services to meet your needs",
+          icon: "bi bi-headset",
+          price: 600,
+        },
+        {
+          id: 7,
+          title: "IT Services",
+          description:
+            "We offer a wide range of IT services to meet your needs",
+          icon: "bi bi-headset",
+          price: 700,
+        },
+        {
+          id: 8,
+          title: "HR Services",
+          description:
+            "We offer a wide range of HR services to meet your needs",
+          icon: "bi bi-headset",
+          price: 800,
+        },
+        {
+          id: 9,
+          title: "Marketing Services",
+          description:
+            "We offer a wide range of marketing services to meet your needs",
+          icon: "bi bi-headset",
+          price: 900,
+        },
+      ];
+
+      function renderServices() {
+        const grid = document.getElementById("servicesGrid");
+        grid.innerHTML = services
+          .map(
+            (service) =>
+              `
+       <div class="col-md-6 col-lg-4">
+                  <div class="card h-100 service-card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <div class="service-icon mb-3">
+                        <i class="${service.icon}"></i>
+                      </div>
+                      <h5 class="card-title fw-bold">${service.title}</h5>
+                      <p class="card-text text-muted">
+                        ${service.description}
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-success fw-bold">$${service.price}</span>
+                        <button class="btn btn-primary btn-sm" onclick="addToCart(${service.id} ,'${service.title}' ,${service.price})">
+                          <i class="bi bi-cart-plus"></i> Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      `
+          )
+          .join("");
+      }
+
+      renderServices();
+      updateCartBadge();
+    </script>
+  </body>
+</html>
